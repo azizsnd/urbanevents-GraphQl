@@ -51,5 +51,5 @@ city-services-platform/
 
 ```bash
 git clone https://github.com/azizsnd/urbanevents-GraphQl.git
-cd city-services-platform
+cd urbanevents-GraphQl
 ```

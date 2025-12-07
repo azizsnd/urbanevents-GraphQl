@@ -24,11 +24,17 @@ Développement d'une plateforme de services urbains interopérables pour une vil
 
 ## 📁 Structure du Projet
 city-services-platform/
+
 ├── urbanevents-graphql/ # Service GraphQL - Événements urbains
+
 ├── mobility-rest/ # Service REST - Mobilité intelligente
+
 ├── airquality-soap/ # Service SOAP - Qualité de l'air
+
 ├── emergency-grpc/ # Service gRPC - Urgences
+
 ├── api-gateway/ # API Gateway (Spring Cloud Gateway)
+
 └── web-client/ # Client web (React/Angular)
 
 

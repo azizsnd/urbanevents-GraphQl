@@ -1,0 +1,35 @@
+type UrbanEvent {
+    id: ID!
+    title: String!
+    description: String
+    location: String!
+    category: String!
+    startDateTime: String!  # ISO-8601
+    endDateTime: String
+    participants: [String]
+    isFree: Boolean!
+}
+
+type Query {
+    events: [UrbanEvent]!
+    event(id: ID!): UrbanEvent
+    eventsByCategory(category: String!): [UrbanEvent]!
+    eventsByLocation(location: String!): [UrbanEvent]!
+    upcomingEvents: [UrbanEvent]!
+}
+
+input UrbanEventInput {
+    title: String!
+    description: String
+    location: String!
+    category: String!
+    startDateTime: String!
+    endDateTime: String
+    participants: [String]
+    isFree: Boolean
+}
+
+type Mutation {
+    createEvent(input: UrbanEventInput!): UrbanEvent!
+    deleteEvent(id: ID!): Boolean
+}
